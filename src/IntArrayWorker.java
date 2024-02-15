@@ -1,27 +1,49 @@
-public class IntArrayWorker
-{
-    /** two dimensional matrix */
+public class IntArrayWorker {
+    /**
+     * two dimensional matrix
+     */
     private int[][] matrix = null;
 
-    /** set the matrix to the passed one
+    /**
+     * set the matrix to the passed one
+     *
      * @param theMatrix the one to use
      */
-    public void setMatrix(int[][] theMatrix)
-    {
+    public void setMatrix(int[][] theMatrix) {
         matrix = theMatrix;
     }
 
     public int getCount(int value) {
         int count = 0;
-        for(int[] tempArr: matrix) {
-            for(int temp: tempArr) {
-                if(temp == value) {
+        for (int[] tempArr : matrix) {
+            for (int temp : tempArr) {
+                if (temp == value) {
                     count++;
                 }
             }
         }
         return count;
     }
+
+    public int getLargest(int largestVal) {
+        int largest = 0;
+        for (int row = 0; row < matrix.length; row++)
+        {
+            for (int col = 0; col < matrix[0].length; col++)
+            {
+                if()
+            }
+        }
+        return largest;
+    }
+
+//    public int getColTotal(int cols) {
+//        int colTotal = 0;
+//        for(int col = 0; col < matrix[0].length; col++){
+//            cols = colTotal +matrix[0][col] + matrix[1][col];
+//        }
+//        return cols;
+//    }
 
     /**
      * Method to return the total
